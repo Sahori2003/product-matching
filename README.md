@@ -51,8 +51,8 @@ product-matching/
 │   ├── Extract_entities_*.json # Extracted entity data
 │   ├── labeled_datasets_specified/ # Labeled training data
 │   └── Cleaned_data.xlsx       # SKU catalog (not shown in structure)
-├── logs/
-|                       # Application logs
+├── logs/                       # Application logs
+|                       
 ├── requirements.txt            # Python dependencies
 ├── pipeline.txt                # Data processing pipeline description
 ├── result_test_api.txt         # API test results
