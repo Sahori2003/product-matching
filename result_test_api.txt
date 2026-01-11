@@ -1,6 +1,0 @@
-from 120 alias --> (106) top1 = sku
-
-from 14 alias --> (8) in top 2, 3, 4, 5
-
-total is linked = 114
-total is not linked = 6
