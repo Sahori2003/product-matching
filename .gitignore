@@ -1,0 +1,28 @@
+# Environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Private data
+data/
+logs/
+models/
+
+# Files
+*.xlsx
+*.csv
+*.json
+*.bin
+*.safetensors
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Lock
+uv.lock

@@ -1,0 +1,53 @@
+raw data --> preprocessing_data.py --> cleaned_data
+
+cleaned_data --> regex.py --> (Extract_entities_alias_data.json, Extract_entities_sku_data.json)
+
+(Extract_entities_alias_data.json, Extract_entities_sku_data.json) --> training_ner.py --> ner_model
+
+cleaned_data --> ner_on_sku.py --> Extract_entities_spacy_SKU_data.json
+
+Extract_entities_spacy_SKU_data.json --> augmentation_data.py --> folder(labeled_datasets_specified)
+
+all_combined_labeled_specified.xlsx --> embedding.py --> embedding_model
+
+cleaned_data --> faiss_index_bulder.py --> faiss_index.
+
+
+
+in evaluation.py:
+- on all the data that was trained on :
+Total Samples: 952
+
+TOP-1 METRICS:
+  Accuracy  : 0.9296 (92.96%)
+  Precision : 0.9296
+  Recall    : 0.9296
+  F1 Score  : 0.9296
+
+TOP-10 METRICS:
+  Accuracy  : 0.9800 (98.00%)
+  Precision : 0.8308
+  Recall    : 0.9296
+  F1 Score  : 0.9296
+
+TOP-10 METRICS:
+  Accuracy  : 0.9800 (98.00%)
+  Precision : 0.8308
+  F1 Score  : 0.9296
+
+TOP-10 METRICS:
+  Accuracy  : 0.9800 (98.00%)
+  Precision : 0.8308
+TOP-10 METRICS:
+  Accuracy  : 0.9800 (98.00%)
+  Precision : 0.8308
+  Recall    : 0.9800
+  Precision : 0.8308
+  Recall    : 0.9800
+  Recall    : 0.9800
+  F1 Score  : 0.8993
+  F1 Score  : 0.8993
+==================================================
+
+Top-1 Accuracy: 0.9296
+Top-1 F1 Score: 0.9296
